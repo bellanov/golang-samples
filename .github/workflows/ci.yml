@@ -18,7 +18,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: '1.21'
+          go-version: '1.26'
 
       - name: Run golangci-lint
         uses: golangci/golangci-lint-action@v3
@@ -38,7 +38,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: '1.21'
+          go-version: '1.26'
 
       - name: Build
         run: go build -v ./cmd/app
@@ -58,7 +58,7 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v4
         with:
-          go-version: '1.21'
+          go-version: '1.26'
 
       - name: Run tests
         run: go test -v -coverprofile=coverage.out ./...
